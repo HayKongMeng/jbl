@@ -1,0 +1,17 @@
+
+RewriteEngine on
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/jblthailand88/myapp"
+PassengerBaseURI "/"
+PassengerNodejs "/home/jblthailand88/nodevenv/myapp/20/bin/node"
+PassengerAppType node
+PassengerStartupFile server.js
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
+<IfModule Litespeed>
+</IfModule>
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END
+RewriteCond %{HTTP_HOST} ^jblthailand\.net$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.jblthailand\.net$
+RewriteRule ^myapp$ "http\:\/\/www\.jblthailand\.net\/" [R=301,L]
+
