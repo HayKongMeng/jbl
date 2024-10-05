@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { currencyFormat } from "@/app/utils/Formatter";
 import { signOut } from "next-auth/react";
 import axios from "axios";
-import { API_URL, LOGOUT_URL } from "../../../lib/ApiEndPoints";
+import { API_URL, BANK_URL, LOGOUT_URL } from "../../../lib/ApiEndPoints";
 import { fetchBank } from "@/app/dataFetch/bankFetch";
 
 export default function Profile() {
@@ -56,7 +56,7 @@ export default function Profile() {
 
     try {
       setLoading(true);
-      const response = await axios.post(`${API_URL}/bank`, bankDetails, {
+      const response = await axios.post(`${BANK_URL}`, bankDetails, {
         headers: {
           Authorization: `Bearer ${user.token}`,
         },
@@ -83,7 +83,7 @@ export default function Profile() {
     try {
       const response = await axios.get(`${API_URL}/user/${user.uuid}`, {
         headers: {
-          Authorization: `Bearer ${user.token}`,
+          Authorization: `Bearer ${user.token}`,  
         },
       });
       setgetUser(response.data);
@@ -108,11 +108,12 @@ export default function Profile() {
     event.preventDefault();
 
     const formData = {
-      current_password: event.target.current_password.value,
-      new_password: event.target.new_password.value,
-      new_password_confirmation: event.target.new_password_confirmation.value,
+      current_password: dataState.current_password,
+      new_password: dataState.new_password,
+      new_password_confirmation:dataState.new_password_confirmation,
     };
-
+    console.log("Form Data: ", formData);
+    console.log("User Token: ", user.token);
     try {
       const response = await axios.post(
         `${API_URL}/change-password`,
@@ -123,7 +124,6 @@ export default function Profile() {
           },
         }
       );
-
       if (response.data.type === "success") {
         alert(response.data.message);
       } else {
@@ -343,6 +343,7 @@ export default function Profile() {
                         <label>รหัสผ่านเดิม</label>
                         <input
                           type="text"
+                          name="current_password"
                           required
                           value={dataState.current_password}
                           onChange={(e) =>
@@ -357,6 +358,7 @@ export default function Profile() {
                         <label>รหัสผ่านใหม่</label>
                         <input
                           type="number"
+                          name="new_password"
                           required
                           value={dataState.new_password}
                           onChange={(e) =>
@@ -371,6 +373,7 @@ export default function Profile() {
                         <label>รหัสผ่านใหม่</label>
                         <input
                           type="number"
+                          name="new_password_confirmation"
                           required
                           value={dataState.new_password_confirmation}
                           onChange={(e) =>
