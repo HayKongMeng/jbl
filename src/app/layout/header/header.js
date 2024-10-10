@@ -89,7 +89,7 @@ export default function Header() {
                                 </div>
                                 <div className="cart-sidebar__content">
                                     <p>ตะกร้าของคุณว่างอยู่ในขณะนี้</p>
-                                    <Link href="/"><button className="btn btn-primary">ซื้อสินค้า</button></Link>
+                                    <Link href="/"><button className="btn-cart btn-primary">ซื้อสินค้า</button></Link>
                                 </div>
                             </div>
 

@@ -627,7 +627,7 @@ button.chat-toggle svg {flex-shrink: 0;height: 48px;width: auto;}
 .cart-sidebar__content {padding: 16px;align-items: center;margin: auto;font-size: 0.88em;}
 .cart-sidebar__content p {text-align: center;margin: 16px 0;color: black;}
 .cart-overlay {position: fixed;width: 1000%;height: 100 0%;background-color: rgba(0, 0, 0, 0.5);z-index: 1000  ;}
-.btn {display: inline-block;position: relative;max-width: 100%;padding: 12px 26px;transition: opacity 0.6s ease, color 0.6s ease, background-position 0.4s ease-out;border-radius: 27px;outline-offset: 1px; font-weight: 700;line-height: 1.2em;text-align: center;appearance: none;word-break: break-word;background-color: rgb(232, 74, 56);text-transform: none;margin-left: 25%;}
+.btn-cart {display: inline-block;position: relative;max-width: 100%;padding: 12px 26px;transition: opacity 0.6s ease, color 0.6s ease, background-position 0.4s ease-out;border-radius: 27px;outline-offset: 1px; font-weight: 700;line-height: 1.2em;text-align: center;appearance: none;word-break: break-word;background-color: rgb(232, 74, 56);text-transform: none;margin-left: 25%;}
 .btn-primary:hover{outline-color: rgb(240, 75, 37);outline-offset: 3px; background: rgb(243, 114, 84) linear-gradient(104deg, rgb(243, 114, 84) 60%, rgb(240, 75, 37) 60%, rgb(240, 75, 37) 100%) no-repeat 100% 100%; background-size: 300% 100%;color: rgb(255, 255, 255);} 
 
 
