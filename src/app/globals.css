@@ -64,6 +64,13 @@ body {:lang(th) {font-family: "DBHelvethaicaX";}}
 .banner__section.im__001{background-image:url(https://ucarecdn.com/3bf34f37-16d5-47de-aaa5-fa3610a24152/-/format/auto/-/preview/2560x2560/-/quality/lighter/Website_Category%20Landing%20Page%20-%20Speaker%201500x300.jpg);}
 .banner__section.im__002{background-image:url(https://ucarecdn.com/1bede79d-fb0a-482a-bfc8-9c95e5bef989/-/format/auto/-/preview/3000x3000/-/quality/lighter/Banner%20Patybox310-02.png)}
 .banner__section.im__003{background-image:url(https://ucarecdn.com/f874a884-c2cd-4a8f-8436-c5a54a9d664d/-/format/auto/-/preview/2560x2560/-/quality/lighter/JBL_Charge_5_Category_Banner_1500x1300px.png)}
+.banner__section.im__004{background-image:url(https://ucarecdn.com/ab67e6b6-da4d-4734-bcb8-07e63057e2c8/-/format/auto/-/preview/1500x1500/-/quality/lighter/JBL_TourPro2_Category_Banner_150%20_1_.jpg)}
+.banner__section.im__005{background-image:url(https://ucarecdn.com/256eda21-7978-42eb-bb53-fadb6539e98c/-/format/auto/-/preview/3000x3000/-/quality/lighter/jbl_endurance_run_2bt_category_banner_1500x300px.png)}
+.banner__section.im__006{background-image:url(https://ucarecdn.com/f1c98d99-e02e-4622-bee8-0e320620ff4c/-/format/auto/-/preview/3000x3000/-/quality/lighter/resize%20banner%20wab%20jbl_desktop%201500x300px%20-%20jpg%20-%20%e0%b9%84%e0%b8%a1%e0%b9%88%e0%b9%80%e0%b8%81%e0%b8%b4%e0%b8%99%20300%20k.jpg);}
+.banner__section.im__007{background-image:url(https://ucarecdn.com/ba09b69a-137e-4df1-84b1-e0e4185b4fbb/-/format/auto/-/preview/3000x3000/-/quality/lighter/jbl_quantum_910_category_banner_1500x300px_1_.png);}
+.banner__section.im__008{background-image:url(https://ucarecdn.com/9c3d3a98-af21-4521-b847-25d6a91a28d9/-/format/auto/-/preview/3000x3000/-/quality/lighter/Audio%20Glasses.jpg);}
+.banner__section.im__009{background-image: url(https://ucarecdn.com/1d5411a4-d3e2-4fdd-9357-e87f9c304088/-/format/auto/-/preview/3000x3000/-/quality/lighter/Banner-Acsesories.jpg);}
+.banner__section.im__010{background-image:url(https://ucarecdn.com/9ef68104-d845-4462-b80a-c8d308f97112/-/format/auto/-/preview/3000x3000/-/quality/lighter/Soundbar-category.jpg);}
 .banner__inn{max-width:none;padding-top:0;padding-left:70px;padding-bottom:10px;}
 .banner__section .banner__title h1{padding-bottom:10px;font-family:DBHelvethaicaX;font-size:60px;font-weight:700;line-height:1.25em;color:#fff;letter-spacing:0;text-transform:none;}
 .banner__section .banner__subTitle p{padding-right:80px;font-family:DBHelvethaicaX;font-size:28px;font-weight:700;line-height:1em;color:#fff;letter-spacing:0;text-transform:none;}
@@ -563,11 +570,65 @@ span.sq-sort-label{font-size:16px;color:#000}
 
 
 
+/* chat */
+.chat-app {font-stretch: normal;letter-spacing: 0;line-height: normal;text-transform: none;-webkit-font-smoothing: antialiased;position: fixed;z-index: 999;bottom: 2%;left: 20px;}
+.chat-app span{font-family: normal !important;}
+button.chat-toggle.chat-toggle--text-button {align-items: center;border: none;border-radius: 16px;box-shadow: 0 0 5px rgba(0, 0, 0, .15);color: white;display: flex;font-weight: 600;height: 60px !important;line-height: 2rem;max-width: fit-content;padding: 0 12px 0 3px;width: auto;background-color: #e84438;}
+button.chat-toggle .chat-title {font-size: 24px;margin: 0 auto;}
+button.chat-toggle.chat-toggle--text-button .chat-title {align-items: center;display: flex;max-height: 40px;overflow: hidden;white-space: nowrap;}
+button.chat-toggle svg {flex-shrink: 0;height: 48px;width: auto;}
+.chat-window {position: fixed;bottom: 12%;left: 20px;background-color: white;border-radius: 10px;box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);z-index: 1000;max-width: 600px;}
+.chat-content{border-radius: 12px;}
+.chat-text p {font-size: 20px;font-weight: bold;color: #ffffff;font-family: none;}
+.chat-content span {font-size: 18px;display: block;margin-bottom: 8px;font-family: none; color: white;}
+.chat-text button {background-color: #222222;color: white;border: none;padding: 8px;cursor: pointer;width: 100%;border-radius: 12px;font-family: normal !important;font-size: 16px;}
+.chat-app svg{width: 60px !important;}
+.chat-text{background: rgb(250, 70, 22);padding: 20px 16px 12px;border-radius: 12px 12px 0 0;}
+.chat-answer{padding: 0 12px 12px;}
+.chat-answer p{font-family: none;text-align: center;margin: 16px auto 16px;font-size:16px;font-weight: 600;}
+.chat-answer button{background-color: #ffffff;color: rgb(0, 0, 0);padding: 8px;width: 100%;border-radius: 12px;font-family: normal !important;font-size: 16px;text-align: left;border: 1px solid #222;}
+.chat-answer button:hover{background-color: #222;color: white;}
+
+
+/* Language */
+.weglot_switcher {position: fixed;width: 85.2px;border: 1px solid #ccc;height: 37px;align-items: center;display: flex;justify-content: center;right: 20px;bottom: 0px;z-index: 999; background-color: white;}
+.weglot_switcher .wg-li {cursor: pointer;}
+.weglot_switcher .wg-li a {text-decoration: none;color: black;}
+.weglot_switcher .wg-li a:hover{color: #0077b3;}
+.weglot_switcher .arrow {display: inline-block;width: 16px;height: 16px;margin-left: 8px;background-size: contain;flex-direction: column;align-items: center;display: inline-flex;justify-content: center;} 
+.weglot_switcher .arrow.down::after {content: '';display: block;width: 100%;height: 100%;rotate: -90deg;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI4NC45IDI4NC45Ij48cGF0aCBkPSJtMjgyIDc2LjUtMTQuMi0xNC4zYTkgOSAwIDAgMC0xMy4xIDBMMTQyLjUgMTc0LjQgMzAuMyA2Mi4yYTkgOSAwIDAgMC0xMy4yIDBMMyA3Ni41YTkgOSAwIDAgMCAwIDEzLjFsMTMzIDEzM2E5IDkgMCAwIDAgMTMuMSAwbDEzMy0xMzNhOSA5IDAgMCAwIDAtMTN6Ii8+PC9zdmc+");
+  background-position: 50%;background-repeat: no-repeat;background-size: 11px ;margin-top: 10px;}
+.weglot_switcher .arrow.up::after {content: '';display: block;width: 100%;height: 100%;rotate: 180deg;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI4NC45IDI4NC45Ij48cGF0aCBkPSJtMjgyIDc2LjUtMTQuMi0xNC4zYTkgOSAwIDAgMC0xMy4xIDBMMTQyLjUgMTc0LjQgMzAuMyA2Mi4yYTkgOSAwIDAgMC0xMy4yIDBMMyA3Ni41YTkgOSAwIDAgMCAwIDEzLjFsMTMzIDEzM2E5IDkgMCAwIDAgMTMuMSAwbDEzMy0xMzNhOSA5IDAgMCAwIDAtMTN6Ii8+PC9zdmc+");
+  background-repeat: no-repeat;background-size: 11px;}
+.dropup {position: absolute;bottom: 100%; background-color: white;border: 1px solid #ccc;width: 85.2px;box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);list-style: none;padding: 0;margin: 0;}
+.dropup li {padding: 10px;text-align: left;}
+.dropup li:hover {background-color: #f1f1f1;}
+
+
+/* search */
+.search-modal {position: fixed;z-index: 1000;left: 0;top: 0;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.7); overflow: auto;}
+.search-modal-content {position: relative;margin: 10% auto; width: 60%; max-width: 500%;display: flex;align-items: center;background-color: white;padding-left: 30px;}
+.search-modal-content {color: #000;}
+.close {position: absolute;top: 10px;right: 20px;font-size: 24px;font-weight: bold;color: #000;cursor: pointer;}
+.search-input {width: 100%;padding: 4px 20px;font-size: 24px;color:black;}
+.search-input:focus{outline: none;}
+.search-input::placeholder{color: #000;opacity: 1;} 
 
 
 
-
-
+/* Cart icon  */
+.cart-sidebar {position: fixed;top: 0;right: -100%;width: 540px;height: 100%;background-color: white;z-index: 1001;transition: right 0.3s ease;border-radius: 12px 0 0 12px;box-shadow: -2px 1px 10px 2px rgba(0, 0, 0, 0.2);display: none;}
+.cart-sidebar.visible {right: 0;display: flex;flex-direction: column;}
+.cart-sidebar__header {display: flex;justify-content: space-between;padding: 24px 32px;border-bottom: 1px solid #d4d5d4;border-radius: 12px 0 0 0;}
+.cart-sidebar__header h2 {color: black;margin: 0;font-size: 27px;}
+.cart-sidebar__close {font-size: 20px;color: black;}
+.cart-sidebar__content {padding: 16px;align-items: center;margin: auto;font-size: 0.88em;}
+.cart-sidebar__content p {text-align: center;margin: 16px 0;color: black;}
+.cart-overlay {position: fixed;width: 1000%;height: 100 0%;background-color: rgba(0, 0, 0, 0.5);z-index: 1000  ;}
+.btn {display: inline-block;position: relative;max-width: 100%;padding: 12px 26px;transition: opacity 0.6s ease, color 0.6s ease, background-position 0.4s ease-out;border-radius: 27px;outline-offset: 1px; font-weight: 700;line-height: 1.2em;text-align: center;appearance: none;word-break: break-word;background-color: rgb(232, 74, 56);text-transform: none;margin-left: 25%;}
+.btn-primary:hover{outline-color: rgb(240, 75, 37);outline-offset: 3px; background: rgb(243, 114, 84) linear-gradient(104deg, rgb(243, 114, 84) 60%, rgb(240, 75, 37) 60%, rgb(240, 75, 37) 100%) no-repeat 100% 100%; background-size: 300% 100%;color: rgb(255, 255, 255);} 
 
 
 

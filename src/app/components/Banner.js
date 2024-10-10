@@ -6,7 +6,9 @@ const Banner = ({title, subTitle, classBg}) => {
             <div className={`banner__section ${classBg}`}>
                 <div className="banner__inn">
                     <div className="banner__title">
-                        <h1>{title}</h1>
+                        <h1 style={{ color: title === "Audio Glasses" ? 'black' : 'white' }}>
+                            {title}
+                        </h1>
                     </div>
                     <div className="banner__subTitle">
                         <p>{subTitle}</p>

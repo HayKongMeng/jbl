@@ -8,7 +8,7 @@ import { Accessorie } from '@/app/data/Accessorie';
 export default function Accessories() {
     return (
         <>
-        <Banner title="Accessories" subTitle="ฟังคุณภาพเสียง JBL ที่ออกแบบมาอย่างมีสไตล์ สวมใส่สบาย คุณภาพสูง" classBg="im__014"/>
+        <Banner title="Accessories" subTitle="" classBg="im__009"/>
         <CollectionProduct collectionUrl={Accessorie}/>
             <SubscriptionSection/>
         </>

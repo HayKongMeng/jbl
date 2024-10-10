@@ -11,7 +11,7 @@ export default function Sale() {
     const products = Sales;
     return (
         <>
-        <Banner title="เครื่องเล่นแผ่นเสียง" subTitle="คุณภาพเสียงระดับพรีเมี่ยม มาพร้อม ไมโครโฟน ที่ออกแบบมาให้สามารถใช้ได้กับทั้ง iPhone และ Android" classBg="im__013"/>
+        <Banner title="เครื่องเล่นแผ่นเสียง" subTitle="คุณภาพเสียงระดับพรีเมี่ยม มาพร้อม ไมโครโฟน ที่ออกแบบมาให้สามารถใช้ได้กับทั้ง iPhone และ Android" classBg="im__010"/>
             <div className="content">
                 <div className="sq-app sq-p --grid-view">
                     <Filter/>

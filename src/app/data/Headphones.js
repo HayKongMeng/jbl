@@ -3,7 +3,7 @@ export const Headphones = [
         id: 1696903396892,
         title: "หูฟัง Over-Ear และแบบ On-Ear",
         description: "หูฟังสเตอริโอแบบ Over-Eear และแบบ On-Ear มาพร้อมเทคโนโลยี Bluetooth ไร้สาย DSP ขั้นสูงและไมโครโฟนในตัวสำหรับอุปกรณ์ iOS และ Android",
-        img: "https://ucarecdn.com/cdc1af9d-e42a-42b6-af80-e419e3d6198f/-/format/auto/-/preview/2048x2048/-/quality/lighter/JBL_TourPro2_Sub_Category_Banner.jpg",
+        img: "https://ucarecdn.com/cdc1af9d-e42a-42b6-af80-e419e3d6198f/-/format/auto/-/preview/600x600/-/quality/lighter/JBL_TourPro2_Sub_Category_Banner.jpg",
         path: "/collections/over-and-on-ear-headphones",
         productlist: [
             {

@@ -3,6 +3,8 @@ import "./globals.css";
 import Header from "./layout/header/header";
 import Footer from "./layout/footer";
 import NextAuthSessionProvider from "../app/provider/NextAuthSessionProvider"
+import Chatapp from "./components/Chatapp";
+import Language from "./components/Language";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +20,11 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <NextAuthSessionProvider>
           <Header />
+          <Chatapp/>
           <main id="main-content">{children}</main>
           <Footer />
           <div className="overlay"></div>
+          <Language/>
         </NextAuthSessionProvider>
       </body>
     </html>

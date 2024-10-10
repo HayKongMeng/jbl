@@ -8,9 +8,9 @@ import authOptions from "../../api/auth/[...nextauth]/authOptions";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "123333JBL Store Thailand 123456",
+  title: "JBL Store Thailand ",
   description:
-    "778899 Get the best sound for your entertainment needs with JBL speakers, headphones & audio systems. Check out our full range of products at JBL Thailand now.",
+    "Get the best sound for your entertainment needs with JBL speakers, headphones & audio systems. Check out our full range of products at JBL Thailand now.",
 };
 
 export default async function AuthLayout({ children }) {

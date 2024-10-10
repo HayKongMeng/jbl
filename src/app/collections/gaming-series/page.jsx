@@ -12,7 +12,7 @@ export default function GamingSeries() {
     const products = Gamingseries[0].productlist;
     return (
         <>
-        <Banner title="หูฟังและลำโพงเกม" subTitle="เปิดประสบการณ์เสียงคมชัดเต็มรูปแบบในโหมดแอ๊คชั่นเกมส์" classBg="im__008"/>
+        <Banner title="หูฟังและลำโพงเกม" subTitle="เปิดประสบการณ์เสียงคมชัดเต็มรูปแบบในโหมดแอ๊คชั่นเกมส์" classBg="im__007"/>
             <div className="content">
                 <div className="sq-app sq-p --grid-view">
                     <Filter/>

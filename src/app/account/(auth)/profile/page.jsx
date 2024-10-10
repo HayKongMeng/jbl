@@ -202,7 +202,7 @@ export default function Profile() {
                     {" "}
                     เปลี่ยนรหัส{" "}
                   </button>
-                  <button
+                  {/* <button
                     onClick={() => handleTabChange("tab4")}
                     className={`${
                       activeTab === "tab4" ? "active-tab" : ""
@@ -210,7 +210,7 @@ export default function Profile() {
                   >
                     {" "}
                     รายการบัญชี{" "}
-                  </button>
+                  </button> */}
                   <button
                     onClick={logout}
                     className="btn border rounded-full px-6 py-4"
@@ -219,6 +219,7 @@ export default function Profile() {
                     ออกจากระบบ{" "}
                   </button>
                 </div>
+
                 <div className="mx-auto">
                   {activeTab === "tab1" && (
                     <div className="mx-auto">
@@ -227,8 +228,10 @@ export default function Profile() {
                           {" "}
                           บัญชีผู้ใช้ของฉัน{" "}
                         </h1>
+                        <div className="text-[27px]">เบอร์โทร:  {user?.tel}</div>
                       </div>
-                      <div className="flex justify-center items-center border h-[150px] w-[150px] text-center rounded-full mx-auto">
+                      <div className="flex flex-col justify-center items-center border h-[150px] w-[150px] text-center rounded-full mx-auto">
+                        <div className="-mt-[27px] text-[20px]">ยอดรวม</div>
                         <h1 className="text-[25px]">
                           {user?.amount !== undefined && user?.amount !== null
                             ? currencyFormat(user?.amount)
@@ -238,7 +241,7 @@ export default function Profile() {
                     </div>
                   )}
                   {activeTab === "tab2" && (
-                    <form className="auth__form" onSubmit={handleStoreBank}>
+                    <form className="auth__form mt-10" onSubmit={handleStoreBank}>
                       <div className="form__field">
                         <label>ชื่อบัญชี</label>
                         <input
@@ -336,7 +339,7 @@ export default function Profile() {
 
                   {activeTab === "tab3" && (
                     <form
-                      className="auth__form"
+                      className="auth__form mt-10"
                       onSubmit={handleChangePassword}
                     >
                       <div className="form__field">
@@ -396,61 +399,9 @@ export default function Profile() {
                   )}
 
                   {activeTab === "tab4" && (
-                    <form
-                      className="auth__form"
-                      onSubmit={handleChangePassword}
-                    >
-                      <div className="form__field">
-                        <label>รหัสผ่านเดิม</label>
-                        <input
-                          type="text"
-                          required
-                          value={dataState.current_password}
-                          onChange={(e) =>
-                            setDataState({
-                              ...dataState,
-                              current_password: e.target.value,
-                            })
-                          }
-                        />
-                      </div>
-                      <div className="form__field">
-                        <label>รหัสผ่านใหม่</label>
-                        <input
-                          type="number"
-                          required
-                          value={dataState.new_password}
-                          onChange={(e) =>
-                            setDataState({
-                              ...dataState,
-                              new_password: e.target.value,
-                            })
-                          }
-                        />
-                      </div>
-                      <div className="form__field">
-                        <label>รหัสผ่านใหม่</label>
-                        <input
-                          type="number"
-                          required
-                          value={dataState.new_password_confirmation}
-                          onChange={(e) =>
-                            setDataState({
-                              ...dataState,
-                              new_password_confirmation: e.target.value,
-                            })
-                          }
-                        />
-                      </div>
-
-                      <button
-                        type="submit"
-                        className="auth__button"
-                        disabled={loading}
-                      >
-                        {loading ? "ดำเนินการ..." : "บันถึก"}
-                      </button>
-                    </form>
+                   <div>
+                    Transactions
+                   </div>
                   )}
                 </div>
               </div>
